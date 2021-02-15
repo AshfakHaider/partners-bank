@@ -84,6 +84,7 @@
             const withdrawNumber = getInputNumber("withdraw-amount");
 
             updateSpanText("current-withdraw-Amount", withdrawNumber);
+            updateSpanText("current-balance", -1*withdrawNumber);
             document.getElementById("withdraw-amount").value = "";
         })
 
